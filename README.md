@@ -12,6 +12,15 @@ The notebook uses the STL-10 unlabeled image set, generates puzzle-style inputs 
 - Includes a baseline, model architecture, training code, pretrained-weight loading, quantitative evaluation, and visual examples.
 - Achieves a final test MAE of `0.04529`, compared with a baseline MAE of `0.1822`.
 
+## The Task
+
+The model receives nine shuffled, border-eroded 28×28 patches and must
+reconstruct the original 96×96 image — without any patch-position labels:
+
+<p align="center">
+  <img src="docs/images/problem.png" alt="Original image and the scrambled patch input" width="300">
+</p>
+
 ## Result Summary
 
 | Model | Test MAE |
@@ -27,6 +36,11 @@ Selected test examples — the original image, the shuffled and border-eroded pa
 input the model receives, and its reconstruction:
 
 ![Example reconstructions on test images](docs/images/reconstruction_examples.png)
+
+Harder cases — on low-contrast, high-texture subjects the model can lose fine
+detail and leave visible patch seams:
+
+![A weaker reconstruction on a harder image](docs/images/medium_example.png)
 
 ## Repository Contents
 
