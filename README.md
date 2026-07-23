@@ -23,10 +23,10 @@ That is about a 75% MAE improvement over the baseline.
 
 ## Example Reconstructions
 
-Random test examples — the original image, the shuffled and border-eroded patch
+Selected test examples — the original image, the shuffled and border-eroded patch
 input the model receives, and its reconstruction:
 
-![Reconstructions on random test images](docs/images/reconstruction_examples.png)
+![Example reconstructions on test images](docs/images/reconstruction_examples.png)
 
 ## Repository Contents
 
