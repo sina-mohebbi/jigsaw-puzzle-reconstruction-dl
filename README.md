@@ -21,6 +21,13 @@ The notebook uses the STL-10 unlabeled image set, generates puzzle-style inputs 
 
 That is about a 75% MAE improvement over the baseline.
 
+## Example Reconstructions
+
+Random test examples — the original image, the shuffled and border-eroded patch
+input the model receives, and its reconstruction:
+
+![Reconstructions on random test images](docs/images/reconstruction_examples.png)
+
 ## Repository Contents
 
 | File | Purpose |
